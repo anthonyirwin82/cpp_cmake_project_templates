@@ -4,3 +4,11 @@ This is a collection of C++ CMake Project Template files that can be used as a s
 They have been configured to set the project name and compiled binary file to be the same as the directory name of the project.
 
 So all that you need to do is copy the CMake Project Template directory and give it the name of your project.
+
+To build you can run the following commands:
+```
+cmake -B build -G Ninja
+cmake --build build
+./build/bin/<project_name>
+```
+
