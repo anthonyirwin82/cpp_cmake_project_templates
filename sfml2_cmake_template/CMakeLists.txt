@@ -28,6 +28,9 @@ add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE sfml-graphics)
 target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE cxx_std_${CPP_VERSION})
 
+# Create assets directory if it doesn't exist
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/assets)
+
 # Copies the assets directory to the build binary path
 add_custom_target(copy-asset-dir ALL
     COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/assets ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/assets)
