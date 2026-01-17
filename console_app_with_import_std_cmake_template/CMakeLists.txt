@@ -4,10 +4,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 4.0)
 cmake_path(GET CMAKE_CURRENT_LIST_DIR FILENAME ProjectName)   
 string(REPLACE " " "_" ProjectName ${ProjectName})
 
-# At the time of experimenting with import std; GCC had better support so force gcc compiler
-set(CMAKE_C_COMPILER gcc)
-set(CMAKE_CXX_COMPILER g++)
-
 set(CPP_VERSION 23)
 set(CMAKE_CXX_STANDARD ${CPP_VERSION})
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
