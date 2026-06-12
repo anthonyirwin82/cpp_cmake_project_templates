@@ -1,0 +1,13 @@
+bin
+build
+out
+.cache
+.idea
+.vs
+.vscode
+_deps
+CMakeFiles
+cmake_install.cmake
+CMakeCache.txt
+CPack*
+Makefile
